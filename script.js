@@ -1,13 +1,12 @@
-// Select the navbar
+// Select navbar
 const navbar = document.getElementById("navbar");
 
-// Listen for scroll event
+// Change navbar style on scroll
 window.addEventListener("scroll", () => {
   if (window.scrollY > 50) {
-    // Add class when page is scrolled
     navbar.classList.add("scrolled");
   } else {
-    // Remove class when at top
     navbar.classList.remove("scrolled");
   }
 });
+
